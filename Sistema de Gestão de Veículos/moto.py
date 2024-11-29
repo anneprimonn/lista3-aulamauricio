@@ -1,6 +1,6 @@
 from veiculo import Veiculo
 
-class Moto():
+class Moto(Veiculo):
     #mark: marca, model: modelo
     def __init__(self, brand, model):
         super().__init__(brand, model)

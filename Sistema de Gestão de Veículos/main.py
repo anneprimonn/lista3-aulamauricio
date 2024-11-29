@@ -2,14 +2,21 @@ from moto import Moto
 from carro import Carro
 from caminhao import Caminhao
 
-motorcycle = ('Yamaha','XTZ 250') 
-motorcycle.fueltype()
-motorcycle.passenger_capacity()
+def main():
+    moto = Moto('Yamaha,', 'XTZ 250')
+    print(f'\nMoto: {moto.brand} {moto.model}')
+    print(f'Combustível: {moto.fueltype()}')
+    print(f'Capacidade: {moto.passenger_capacity()}')
 
-truck = ('Volkswagen','VW Meteor')
-truck.fueltype()
-truck.passenger_capacity()
+    caminhão = Caminhao('Volkswagen,', 'VW Meteor')
+    print(f'\nCaminhão: {caminhão.brand} {caminhão.model}')
+    print(f'Combustível: {caminhão.fueltype()}')
+    print(f'Capacidade: {caminhão.passenger_capacity()}')
 
-car= ('Ford', 'Ford Ka')
-car.fueltype()
-car.passenger_capacity()
+    carro = Carro('Ford,', 'Ford Ka')
+    print(f'\nCarro: {carro.brand} {carro.model}')
+    print(f'Combustível: {carro.fueltype()}')
+    print(f'Capacidade: {carro.passenger_capacity()}')
+
+if __name__ == '__main__':
+    main()

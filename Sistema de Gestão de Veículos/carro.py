@@ -5,9 +5,9 @@ class Carro(Veiculo):
     def __init__(self, brand, model):
         super().__init__(brand, model)
     
-    def fueltype():
+    def fueltype(self):
         fueltype = str(input('Type of gasoline:'))
         return fueltype
     
-    def passenger_capacity():
+    def passenger_capacity(self):
         return ('capacity of 5 passengers')
